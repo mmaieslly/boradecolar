@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Decolar - Voos</title>
+    <link href="./Css/voos.css" rel="stylesheet">
+    <script src="./JavaScript/voos.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./Imagens/IMG_Fixos/logo.png" alt="Logo Bora Decolar" width="150px" height="60px"/>
+
+            <ul>
+                <li><a href="./Paginas/promocao.html" id="desenv">Promoção</a></li>
+                <li><a href="./Paginas/hoteis.html">Hotéis</a></li>
+                <li><a href="./Paginas/pacotes.html">Pacotes</a></li>
+                <li><a href="index.html">Voos</a></li>
+                <li><a href="./Paginas/Locacao_Carros.html">Aluguel de Carros</a></li>
+                <li><a href="./Paginas/quem_somos.html">Quem Somos</a></li>
+                <li>
+                    <a href="./Paginas/login.html"><img src="./Imagens/IMG_Fixos/perfil.png" alt="Perfil" width="70px" height="70px"/></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div id="pesquisar_voo">
+        <section>
+            <form>
+                <strong>PASSAGENS AEREAS</strong>
+                
+                <div class="switch__container">
+                    <span>Ida</span>
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox" name="idaVolta" checked="true">
+                    <label for="switch-shadow" id="tese"></label>
+                    <span>Ida e Volta</span>
+                </div>  
+
+                <div class="ida_volta">
+                    <span id="espaco">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                    <label for="dataIda">Partida</label>
+                    <input type="date" name="datadevoos" id="dataIda" class="data_input">
+                    <div id="volta">
+                        <label for="dataVolta">Retorno</label>
+                        <input type="date" name="datadevoos" id="dataVolta" class="data_input" min="2023-01-01">
+                    </div>
+                </div>
+
+                <div class="origem">
+                    <label for="origem">Origem</label>
+                    <input type="text" list="aeroportos" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
+                </div>
+
+                <img src="./Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
+
+                <div class="destino">
+                    <label for="destino">Destino</label>
+                    <input type="search" list="aeroportos" name="origemdestino" id="destino" class="local_input" placeholder="Aeroporto de Destino">
+                </div>
+
+                <div class="passageiros">
+                    <label for="quantpessoas">Passageiros</label>
+                    <input name="pessoas" type="number" id="quantpessoas" class="num_input">
+                </div>
+
+                <input id="procurar" type="button" value="Procurar Passagens" class="button">
+
+
+                <datalist id="aeroportos">
+                    <option value ="Guarulhos - Aerop. Inter.  Gov André Franco Montoro - GRU"></option>
+                    <option value ="Lago Sul - Aeroporto Internacional Juscelino Kubitschek - BSB"></option>
+                    <option value ="Rio de Janeiro - Aeroporto Internacional Antônio Carlos Jobim - GIG"></option>
+                    <option value ="Vitória - Aeroporto Internacional Eurico de Aguiar Sales - VIX"></option>
+                    <option value ="Salvador - Aeroporto Internacional Luís Eduardo Magalhães - SSA"></option>
+                    <option value ="Confins - Aeroporto Internacional Tancredo Neves - CNF"></option>
+                    <option value ="Fortaleza - Aeroporto Internacional Pinto Martins - FOR"></option>
+                    <option value ="Manaus - Aeroporto Internacional Eduardo Gomes - MAO"></option>
+                    <option value ="São Luís - Aeroporto Internacional Marechal Hugo da Cunha Machado - SLZ"></option>
+                    <option value ="Porto Alegre - Aeroporto Internacional Salgado Filho - POA"></option>
+                    <option value ="Recife - Aeroporto Internacional Gilberto Freyre - REC"></option>
+                    <option value ="São José dos Pinhais - Aeroporto Internacional de Curitiba - CWB"></option>
+                    <option value ="Belém - Aeroporto Internacional  Júlio Cezar Ribeiro - BEL"></option>
+
+                </datalist>
+            </form>
+        </section>
+
+    
+        <P class="titulo_anuncio">DESTINOS EM ALTA</P>
+        <div class="anuncios">
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos01.jpg" class="imagem_anuncio"/>
+                <p>SALVADOR</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos02.jpg" class="imagem_anuncio"/>
+                <p>PORTO DE GALINHAS</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos03.jpg" class="imagem_anuncio"/>
+                <p>PARIS</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos04.jpg" class="imagem_anuncio"/>
+                <p>NOVA IORQUE</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos05.jpg" class="imagem_anuncio"/>
+                <p>ROMA</p>
+            </div>
+        </div>
+        <P class="titulo_anuncio">DESTINOS EM ALTA</P>
+        <div class="anuncios">
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos06.jpeg" class="imagem_anuncio"/>
+                <p>SALVADOR</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos07.png" class="imagem_anuncio"/>
+                <p>PORTO DE GALINHAS</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos08.jpg" class="imagem_anuncio"/>
+                <p>PARIS</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos09.jpeg" class="imagem_anuncio"/>
+                <p>NOVA IORQUE</p>
+            </div>
+            <div class="caixa_anuncio">
+                <img src="./Imagens/IMG/Voos/voos10.jpeg" class="imagem_anuncio"/>
+                <p>ROMA</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultado_voo">
+        <section>
+            <div>
+                <div class="resultado"  id="ROrigem">
+                    <p>Origem</p>
+                    <span id="SOrigem"></span>
+                </div>
+                <div class="resultado" id="RDestino">
+                    <p>Destino</p>
+                    <span id="SDestino"></span>
+                </div>
+                <div class="resultado" id="RIda">
+                    <p>Ida</p>
+                    <span id="SIda"></span>
+                </div>
+                <div class="resultado" id="RVolta">
+                    <p>Volta</p>
+                    <span id="SVolta"></span>
+                </div>
+                <div class="resultado" id="RPassageiros">
+                    <p>Passageiros</p>
+                    <span id="SPassageiros"></span>
+                </div>
+
+                <button id="btn">Nova Busca</button>
+            </div>
+        </section>
+
+        <P class="titulo_anuncio">RESULTADOS DA PESQUISA</P>
+        <div class="anuncios">
+            <div class="caixa_anuncio">
+                <div>
+                    <img src="./Imagens/IMG/Pacotes/Pacotes_01.png" class="imagem_anuncio"/>
+                    <p>7 Dias no Caribe - Aereo + Hospedagem + Tour</p>
+                </div>
+                <div>
+                    <p class="preco">Preço por Pessoa</p>
+                    <h3>R$ 13.200,00</h3>
+                    <small> Taxas e impostos inclusos</small>
+                    <button>Conferir</button>
+                </div>
+            </div>
+            <div class="caixa_anuncio">
+                <div>
+                    <img src="./Imagens/IMG/Pacotes/Pacotes_02.png" class="imagem_anuncio"/>
+                    <p>7 Dias na Disney - Aereo + Hospedagem + Entrada VIP</p>
+                </div>
+                <div>
+                    <p class="preco">Preço por Pessoa</p>
+                    <h3>R$ 13.200,00</h3>
+                    <small> Taxas e impostos inclusos</small>
+                    <button>Conferir</button>
+                </div>
+            </div>
+            <div class="caixa_anuncio">
+                <div>
+                    <img src="./Imagens/IMG/Pacotes/Pacotes_03.png" class="imagem_anuncio"/>
+                    <p>7 Dias no Parque Mundial - Aereo + Hospedagem + Sem Fila</p>
+                </div>
+                <div>
+                    <p class="preco">Preço por Pessoa</p>
+                    <h3>R$ 13.200,00</h3>
+                    <small> Taxas e impostos inclusos</small>
+                    <button>Conferir</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</main>
+        
+    <footer>
+
+        <div class="lista_footer">
+            <ul>
+                <li><a href="./Paginas/promocao.html">PROMOÇÃO</a></li>
+                <li><a href="./Paginas/hoteis.html">HOTEIS</a></li>
+                <li><a href="./Paginas/pacotes.html">PACOTES</a></li>
+                <li><a href="index.html">VOOS</a></li>
+                <li><a href="./Paginas/Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
+                <li><a href="./Paginas/quem_somos.html">QUEM SOMOS</a></li>
+            </ul>
+
+            <img src="./Imagens/IMG_Fixos/mapa.png" class="imagen_footer"/>
+        </div>
+
+        <div class="company_info">
+            <img src="./Imagens/IMG_Fixos/logo.png" class="imagen_footer" />
+            <div>
+                <h4>AGENCIA DE VIAGENS</h4>
+                <p>O Mundo é Nosso!<br>CNPJ 12.123.123/0001-10<br>Av. Brigadeiro Faria Lima, Nº 4000, São Paulo - SP</p>
+            </div>
+
+            <div class="redes">
+                <img src="./Imagens/IMG_Fixos/facebook_icon.png" />
+                <img src="./Imagens/IMG_Fixos/instagram_icon.png" />
+                <img src="./Imagens/IMG_Fixos/youtube_icon.png" />
+                <img src="./Imagens/IMG_Fixos/whatsapp_icon.png" />
+                <img src="./Imagens/IMG_Fixos/twitter_icon.png" />
+                <img src="./Imagens/IMG_Fixos/telefone_icon.png" />
+                <img src="./Imagens/IMG_Fixos/telegram_icon.png" />
+            </div>
+            <p>TODOS OS DIREITOS RESERVADOS © BORA DECOLAR AGÊNCIA DE VIAGENS</p>
+        </div>
+
+        <div class="branco"></div>
+
+    </footer>
+
+
+</body>
+</html>
