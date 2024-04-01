@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  color: #585858;
+  height: 5rem;
+  width: 90%;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+/*FORMULARIO DE PESQUISA*/
+#pesquisar_voo section{
+  background-image: url(../Imagens/IMG/Voos/banner.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center 60%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pesquisar_voo form{
+  background: #f8f8f8 ;
+  font-size: 20px;
+  color: #585858;
+  padding: 1.5em;
+  padding-right: 0;
+  border-radius: 12px;
+  width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#pesquisar_voo form strong{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  font-weight: 100;
+  margin-right: 15%;
+  margin-bottom: 20px;
+}
+
+/*Botão Estilo iOS*/
+#pesquisar_voo .switch__container {
+  margin: 0 50px;
+  width: auto;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pesquisar_voo .switch {
+  visibility: hidden;
+  position: absolute;
+  margin-left: -9999px;
+}
+
+#pesquisar_voo .switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+#pesquisar_voo .switch--shadow + label {
+  padding: 2px;
+  width: 50px;
+  height: 25px;
+  background-color: #dddddd;
+  border-radius: 60px;
+}
+
+#pesquisar_voo .switch--shadow + label:before,
+#pesquisar_voo .switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+
+#pesquisar_voo .switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+
+#pesquisar_voo .switch--shadow + label:after {
+  width: 25px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+#pesquisar_voo .switch--shadow:checked + label:before {
+  background-color: #ff914d;
+}
+
+#pesquisar_voo .switch--shadow:checked + label:after {
+  transform: translateX(23px);
+}
+
+/* Datas */
+#pesquisar_voo #espaco{
+  display: none;
+}
+
+#pesquisar_voo .ida_volta{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#pesquisar_voo .data_input{
+  border-radius: 14px;
+  height: 30px;
+  width: 150px;
+  border-color: #dddddd;
+  cursor: pointer;
+}
+
+/* Local */
+#pesquisar_voo .origem{
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#pesquisar_voo .destino{
+  margin-right: 25px;
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+#pesquisar_voo .local_input{
+  border-radius: 14px;
+  height: 30px;
+  width: 250px;
+  border-color: #dddddd;
+  display: flex;
+  align-items: center;
+}
+
+#pesquisar_voo .num_input{
+  border-radius: 14px;
+  height: 30px;
+  width: 60px;
+  border-color: #dddddd;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#pesquisar_voo .passageiros{
+  display: flex;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+#pesquisar_voo .button{
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  height: 31px;
+  width: 200px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+#pesquisar_voo input{
+  text-align: center;
+  font-size: 15px;
+  color:rgba(0, 0, 0, 0.51)
+}
+/* ---------------------------*/
+
+#pesquisar_voo .anuncios{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 6rem;
+  flex-wrap: wrap;
+}
+
+#pesquisar_voo .titulo_anuncio{
+  display: block;
+  text-align: center;
+  background-color: #ff914d;
+  color: white;
+}
+
+#pesquisar_voo .caixa_anuncio{
+  text-align: center;
+  background-color: #efeae4;
+  border-radius: 8px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+#pesquisar_voo .imagem_anuncio{
+  height: 13rem;
+  width: 19rem;
+  cursor: pointer;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #efeae4;
+  color: #545454;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+footer div ul{
+  list-style: none;
+  margin: 30px 60px;
+  font-size: 20px;
+}
+
+.lista_footer{
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+.company_info{
+  width: 740px;
+  font-family: 'Open Sans', sans-serif;
+  color: #777068;
+  display: flex;
+  gap: 4%;
+  flex-wrap: wrap;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+}
+
+.imagen_footer{
+  height: 80px;
+}
+
+.redes img{
+  height: 35px;
+  margin: 3px 25px;
+}
+
+.branco{
+  width: 600px;
+}
+
+
+
+
+
+
+
+#resultado_voo{
+  display: none;
+}
+
+
+/*FORMULARIO DE PESQUISA*/
+#resultado_voo section{
+  background-image: url(../Imagens/IMG/Voos/banner.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center 60%;
+  height: 100PX;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultado_voo section div{
+  background: #f8f8f8 ;
+  font-size: 12px;
+  color: #585858;
+  padding: 0.5em;
+  padding-right: 0;
+  border-radius: 12px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+#resultado_voo .resultado{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#resultado_voo .resultado p{
+  justify-content: left;
+  font-size: 12px;
+}
+
+#resultado_voo .resultado span{
+  font-size: 20px;
+  
+}
+
+#resultado_voo #btn{
+  display: flex;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  height: 30px;
+  width: 500px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+/* ---------------------------*/
+
+#resultado_voo .titulo_anuncio{
+  display: block;
+  text-align: center;
+  background-color: #ff914d;
+  color: white;
+}
+
+#resultado_voo .anuncios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+#resultado_voo .caixa_anuncio{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px;
+}
+
+#resultado_voo .caixa_anuncio div{
+  background-color: #efeae4;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+#resultado_voo .caixa_anuncio img{
+  border-radius: 8px 8px 0px 0px;
+}
+
+#resultado_voo .caixa_anuncio p{
+  font-size: 17.5px;
+  display: flex;
+  justify-content: center;
+  color: #545454;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#resultado_voo .preco{
+  font-size: 17.5px;
+  display: flex;
+  justify-content: center;
+  color: #545454;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+#resultado_voo .caixa_anuncio h3{
+  display: flex;
+  color: #000000;
+  font-size: 23px;
+  justify-content: center;
+  padding: 2px 10px;
+}
+
+#resultado_voo .caixa_anuncio small{
+  display: flex;
+  color: #777068;
+  font-size: 13px;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+#resultado_voo .caixa_anuncio button{
+  display: flex;
+  background-color: #ff914d;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  height: 31px;
+  width: 140px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 25px 0px 25px;
+}
+

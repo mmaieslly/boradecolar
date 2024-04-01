@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    color: #585858;
+    height: 5rem;
+    width: 90%;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #efeae4;
+    color: #545454;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+footer div ul{
+    list-style: none;
+    margin: 30px 60px;
+    font-size: 20px;
+}
+
+.lista_footer{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.company_info{
+    width: 740px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777068;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen_footer{
+    height: 80px;
+}
+
+.redes img{
+    height: 35px;
+    margin: 3px 25px;
+}
+
+.branco{
+    width: 600px;
+}
+
+/*FORMULARIO DE PESQUISA*/
+label, p {
+   white-space: pre-line;
+}
+
+section{
+    background-image: url(../Imagens/IMG/Pacotes/banner.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center 60%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: #f8f8f8 ;
+    font-size: 20px;
+    color: #585858;
+    padding: 0.1em 1.5em;
+    padding-right: 0;
+    border-radius: 12px;
+    width:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+form strong{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    font-weight: 100;
+    margin-right: 100%;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+/* Datas */
+
+.data_input{
+    border-radius: 14px;
+    height: 30px;
+    width: 150px;
+    border-color: #dddddd;
+    cursor: pointer;
+}
+
+/* Local */
+.origem{
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.destino{
+    margin-right: 25px;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.local_input{
+    border-radius: 14px;
+    height: 30px;
+    width: 250px;
+    border-color: #dddddd;
+    display: flex;
+    align-items: center;
+}
+
+.num_input{
+    border-radius: 14px;
+    height: 30px;
+    width: 60px;
+    border-color: #dddddd;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.passageiros, .ida_volta{
+    display: flex;
+    gap: 10px;
+    align-items:baseline;
+    margin-right: 25px;
+    height: 82px;
+}
+
+.button{
+    display: flex;
+    background-color: #ff914d;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    height: 31px;
+    width: 200px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+/* ---------------------------*/
+
+.titulo_anuncio{
+    display: block;
+    text-align: center;
+    background-color: #ff914d;
+    color: white;
+}
+
+.anuncios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.caixa_anuncio{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px;
+}
+
+.caixa_anuncio div{
+    background-color: #efeae4;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.caixa_anuncio img{
+    border-radius: 8px 8px 0px 0px;
+}
+
+.caixa_anuncio p{
+    font-size: 17.5px;
+    display: flex;
+    justify-content: center;
+    color: #545454;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.preco{
+    font-size: 17.5px;
+    display: flex;
+    justify-content: center;
+    color: #545454;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.caixa_anuncio h3{
+    display: flex;
+    color: #000000;
+    font-size: 23px;
+    justify-content: center;
+    padding: 2px 10px;
+}
+
+.caixa_anuncio small{
+    display: flex;
+    color: #777068;
+    font-size: 13px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.caixa_anuncio button{
+    display: flex;
+    background-color: #ff914d;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    height: 31px;
+    width: 140px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 25px 0px 25px;
+}

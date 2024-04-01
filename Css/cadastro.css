@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+header, footer {
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+/*BARRA DE NAVEGAÇÃO*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    color: #585858;
+    height: 5rem;
+    width: 90%;
+  
+    padding-left: 0;
+    padding-right: 0;
+}
+  
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+/*BODY*/
+
+body {
+    background-color:#ff914d;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #efeae4;
+    padding:30px;
+    border-radius:4%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+    width: 400px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#486572
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #486572;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #7598b5;
+}
+
+.label-float label {
+    color:#486572;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color:#7598b5;
+}
+
+button {
+    background-color: transparent;
+    border-color: #486572;
+    color:#486572;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover {
+    background-color:#486572;
+    color:#fff;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #efeae4;
+    color: #545454;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    justify-content: space-between;
+  }
+  
+  footer div ul{
+    list-style: none;
+    margin: 30px 60px;
+    font-size: 20px;
+  }
+  
+  .lista_footer{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+  
+  .company_info{
+    width: 740px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777068;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .imagen_footer{
+    height: 80px;
+  }
+  
+  .redes img{
+    height: 35px;
+    margin: 3px 25px;
+  }
+  
+  .branco{
+    width: 600px;
+  }
+
+  #msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+  #msgSuccess {
+    text-align: center;
+    color:#00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+
+
