@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  
+  <link href="../Css/promocao.css" rel="stylesheet">
+  <title>Promoções - Bora Decolar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../Imagens/IMG_Fixos/logo.png" alt="Logo Bora Decolar" width="150px" height="60px"/>
+
+            <ul>
+                <li><a href="promocao.html">Promoção</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="../index.html" id="home">Voos</a></li>
+                <li><a href="Locacao_Carros.html">Aluguel de Carros</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li>
+                    <a href="login.html"><img src="../Imagens/IMG_Fixos/perfil.png" alt="Perfil" width="70px" height="70px"/></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  
+  <main>
+    <section>
+      <form>
+          <strong>PROMOÇÕES AEREAS</strong>
+
+          <div class="origem">
+              <label for="origem">Origem
+                  <input type="text" name="origemdestino" id="origem" class="local_input" placeholder="Aeroporto de Origem">
+              </label>
+          </div>
+
+          <img src="../Imagens/IMG/Voos/aviao_de_papel.png" height="30px"/>
+
+          <div class="destino">
+              <label for="destino">Destino
+                  <input type="text" name="origemdestino" id="destino" class="local_input" placeholder="Cidade ou Hospedagem">
+              </label>
+          </div>
+
+          <input type="submit" value="Procurar Promos" class="button">
+
+      </form>
+  </section>
+
+
+      <P class= "titulo_anuncio"> PROMOÇÕES </P>
+      <div class="anuncio">
+          <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos04.jpg" class="imagem_anuncio"/>
+            <p><h5>SÃO PAULO Á SALVADOR A PARTIR DE R$750</h5></p>
+          </div>
+
+
+          <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos02.jpg" class="imagem_anuncio"/>
+            <p><h5>VITORIA Á SÃO PAULO A PARTIR DE R$350</h5></p>
+          </div>
+
+
+          <div class="caixa_anuncio">
+            <img src="../Imagens/IMG/Voos/voos03.jpg" class="imagem_anuncio"/>
+            <p><h5>MARANHÃO Á NATAL A PARTIR DE R$400</h5></p>
+            <br><br>
+          </div>
+       </div>    
+      
+        
+                
+  </main>
+      <footer>
+
+        <div class="lista_footer">
+            <ul>
+                <li><a href="promocao.html">PROMOÇÃO</a></li>
+                <li><a href="hoteis.html">HOTEIS</a></li>
+                <li><a href="pacotes.html">PACOTES</a></li>
+                <li><a href="../index.html">VOOS</a></li>
+                <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
+                <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+            </ul>
+
+            <img src="../Imagens/IMG_Fixos/mapa.png" class="imagen_footer"/>
+        </div>
+
+        <div class="company_info">
+            <img src="../Imagens/IMG_Fixos/logo.png" class="imagen_footer" />
+            <div>
+                <h4>AGENCIA DE VIAGENS</h4>
+                <p>O Mundo é Nosso!<br>CNPJ 12.123.123/0001-10<br>Av. Brigadeiro Faria Lima, Nº 4000, São Paulo - SP</p>
+            </div>
+
+            <div class="redes">
+                <img src="../Imagens/IMG_Fixos/facebook_icon.png" />
+                <img src="../Imagens/IMG_Fixos/instagram_icon.png" />
+                <img src="../Imagens/IMG_Fixos/youtube_icon.png" />
+                <img src="../Imagens/IMG_Fixos/whatsapp_icon.png" />
+                <img src="../Imagens/IMG_Fixos/twitter_icon.png" />
+                <img src="../Imagens/IMG_Fixos/telefone_icon.png" />
+                <img src="../Imagens/IMG_Fixos/telegram_icon.png" />
+            </div>
+            <p>TODOS OS DIREITOS RESERVADOS © BORA DECOLAR AGÊNCIA DE VIAGENS</p>
+        </div>
+
+        <div class="branco"></div>
+
+      </footer>
+
+    <div id="modal-alert" class="modal-container">
+    <div class="modal">
+        <img src="../Imagens/IMG_Fixos/Bora_Decolar.png">
+        <form>
+            <input type="button" class="button" value="Ver progresso" id="fechar">
+            <input type="button" class="button" value="Voltar a Home" id="voltarhome">
+        </form>
+    </div>
+    </div>
+    <script>
+            let modal = document.getElementById("modal-alert");
+            let fechar = document.getElementById("fechar");
+            let voltarHome = document.getElementById("voltarhome");
+            let home = document.getElementById("home");
+
+            modal.classList.add("mostrar");
+
+            fechar.addEventListener("click", (e=>{
+                modal.classList.remove("mostrar")
+            }))
+            voltarHome.addEventListener("click", (e=>{
+                home.click()
+            }))
+    </script>
+</body>
+
+</html>

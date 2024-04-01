@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Css/hoteis.css" rel="stylesheet">
+    <title>Hoteis</title>
+    
+    <style>
+        .faixa ul { 
+            display: flex;}
+        .faixa ul li {
+            list-style-type: none;
+            padding-right: 14px;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>BORA DECOLAR</h1>
+    </header>
+
+    <nav class="faixa">
+        <ul>
+            <li><a href="promocao.html">PROMOÇÃO</a></li>
+            <li><a href="hoteis.html">HOTEIS</a></li>
+            <li><a href="pacotes.html">PACOTES</a></li>
+            <li><a href="../index.html" id="home">VOOS</a></li>
+            <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
+            <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+        </ul>
+
+        <p><a href="../index.html">Página Inicial</a></p>
+
+    </nav>
+
+    <form>
+        <strong class="espacado55px">HOTEIS</strong>
+        <br>
+        
+        <label for="acomodacao">Veja as hospedagens disponíveis para:</label><br>
+        <input type="text" name="hospedagem" id="localizacao" value="Canoa Quebrada, CE">
+        <span>&emsp;</span>
+        <label for="checkin">Check-In</label>
+        <input type="date" name="check" id="checkin">
+        <span>&emsp;</span>
+        <label for="checkout">Check-Out</label>
+        <input type="date" name="check" id="checkout">
+        <span>&emsp;</span>
+        <select name="pessoas" id="quantpessoas">
+            <option value="1">01 Hospede</option>
+            <option value="2">02 Hospedes</option>
+            <option value="3">03 Hospedes</option>
+            <option value="4">04 Hospedes</option>
+            <option value="5">05 Hospedes</option>
+            <option value="6">06 Hospedes</option>
+            <option value="7">07 Hospedes</option>
+            <option value="8">08 Hospedes</option>
+        </select>
+        <span>&emsp;</span>
+        <input type="submit" value="Nova Busca">
+    </form>
+
+    <section>
+        <table>
+            <tr>
+             <td>
+                <aside>
+                    <strong>Filtros</strong>
+                    <br><br>
+                    <form>
+                        <div>
+                            <label name="precos">Preços</label>
+                            <br>
+                            <label for="precomin" name="precos">De:</label>
+                            <input type="number" name="precos" id="precomin" value="Preço Min."><br>
+                            <label for="precomax" name="precos">Até:</label>
+                            <input type="number" name="precos" id="precomax" value="Preço Max."><br>
+                            <br><br>
+                        </div>
+            
+                        <div>
+                            <label name="estrelas">Estrelas</label>
+                            <br>
+                            <input type="checkbox" name="estrelas" id="5estrelas">
+                            <label for="5estrelas">⭐⭐⭐⭐⭐</label>
+                            <br>
+                            <input type="checkbox" name="estrelas" id="4estrelas">
+                            <label for="4estrelas">⭐⭐⭐⭐</label>
+                            <br>
+                            <input type="checkbox" name="estrelas" id="3estrelas">
+                            <label for="3estrelas">⭐⭐⭐</label>
+                            <br>
+                            <input type="checkbox" name="estrelas" id="2estrelas">
+                            <label for="2estrelas">⭐⭐</label>
+                            <br>
+                            <input type="checkbox" name="estrelas" id="1estrela">
+                            <label for="1estrela">⭐</label><br>
+                            <br><br>
+                        </div>
+            
+                        <div>
+                            <label name="servicos">Servicos</label>
+                            <br>
+                            <input type="checkbox" name="servicos" id="wifi">
+                            <label for="wifi">Wi-Fi</label>
+                            <br>
+                            <input type="checkbox" name="servicos" id="hidro">
+                            <label for="hidro">Hidromassagem</label>
+                            <br>
+                            <input type="checkbox" name="servicos" id="Estacionamento">
+                            <label for="Estacionamento">Estacionamento</label>
+                            <br>
+                            <input type="checkbox" name="servicos" id="academia">
+                            <label for="academia">Academia</label>
+                            <br>
+                            <input type="checkbox" name="servicos" id="piscina">
+                            <label for="piscina">Piscina</label>
+                            <br><br>
+                        </div>
+                    </form>
+                </aside>
+             </td>
+
+
+
+            <td>
+                <br><br><br>
+                <img  width="250" height="150" src="../Imagens/IMG/Hoteis/hotel01.png"/><br>
+                <img  width="250" height="150" src="../Imagens/IMG/Hoteis/hotel02.png"/><br>
+                <img  width="250" height="150" src="../Imagens/IMG/Hoteis/hotel03.png"/>
+            </td>
+                
+            <td>
+                <strong>Pousada La Dolce Vita</strong></br>Café da manhã incluso, cancelamento grátis até o dia 28/12, wi-fi, piscina, restaurante, suite, lavanderia...<br><button>Conferir</button><br><br><br><br><br><br>
+                <strong>Pousada La Dolce Vita</strong></br>Café da manhã incluso, cancelamento grátis até o dia 28/12, wi-fi, piscina, restaurante, suite, lavanderia...<br><button>Conferir</button><br><br><br><br><br><br>
+                <strong>Pousada La Dolce Vita</strong></br>Café da manhã incluso, cancelamento grátis até o dia 28/12, wi-fi, piscina, restaurante, suite, lavanderia...<br><button>Conferir</button>
+            </td>
+
+              
+            </tr>
+           
+        </table>
+
+    </section>
+
+    <br><br>
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="promocao.html">PROMOÇÃO</a></li>
+                        <li><a href="hoteis.html">HOTEIS</a></li>
+                        <li><a href="pacotes.html">PACOTES</a></li>
+                        <li><a href="../index.html">VOOS</a></li>
+                        <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
+                        <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </td>
+              
+                <td>
+                    <center>
+                        <h2>BORA DECOLAR</h2>
+                        <h4>AGENCIA DE VIAGENS</h4>
+                        <p>O Mundo é Nosso!<br>CNPJ XX.XXX.XXX/0001-XX<br>ENDEREÇO XXXX XXXX XXXXXX</p>
+            
+                        <small>TODOS OS DIREITOS RESERVADOS © BORA DECOLAR AGÊNCIA DE VIAGENS</small>
+                    </center>
+                </td> 
+            </tr>
+           
+          </table>
+
+    </footer>
+
+    <div id="modal-alert" class="modal-container">
+        <div class="modal">
+            <img src="../Imagens/IMG_Fixos/Bora_Decolar.png">
+            <form>
+                <input type="button" class="button" value="Ver progresso" id="fechar">
+                <input type="button" class="button" value="Voltar a Home" id="voltarhome">
+            </form>
+        </div>
+        </div>
+        <script>
+                let modal = document.getElementById("modal-alert");
+                let fechar = document.getElementById("fechar");
+                let voltarHome = document.getElementById("voltarhome");
+                let home = document.getElementById("home");
+    
+                modal.classList.add("mostrar");
+    
+                fechar.addEventListener("click", (e=>{
+                    modal.classList.remove("mostrar")
+                }))
+                voltarHome.addEventListener("click", (e=>{
+                    home.click()
+                }))
+        </script>
+</body>
+</html>

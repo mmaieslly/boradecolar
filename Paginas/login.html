@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../JavaScript/login.js" defer></script>
+    <title>Login</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../Imagens/IMG_Fixos/logo.png" alt="Logo Bora Decolar" width="150px" height="60px"/>
+
+            <ul>
+                <li><a href="promocao.html">Promoção</a></li>
+                <li><a href="hoteis.html">Hotéis</a></li>
+                <li><a href="pacotes.html">Pacotes</a></li>
+                <li><a href="../index.html">Voos</a></li>
+                <li><a href="Locacao_Carros.html">Aluguel de Carros</a></li>
+                <li><a href="quem_somos.html">Quem Somos</a></li>
+                <li>
+                    <a href="login.html"><img src="../Imagens/IMG_Fixos/perfil.png" alt="Perfil" width="70px" height="70px"/></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <div class="container">
+            <div class="card">
+                <h1>Login</h1>
+                <div id="msgError"></div>
+            
+
+                <div class="label-float">
+                    <input type="text" id="usuario" paceholder=""required>
+                    <label id="labelUsuario" for="usuario">usuário</label>
+
+                </div>
+                <div class="label-float">
+                    <input type="password" id="senha" paceholder=""required>
+                    <label id="labelSenha" for="senha">senha</label>
+
+                </div>
+                <div class="justify-center">
+                    <button onclick="entrar()">Entrar</button>
+
+                </div>
+                <div class="justify-center">
+                    <hr>
+
+                </div>
+                <p>Não tem uma conta?
+                    <a href="cadastro.html" class="cad">Cadastre-se</a>
+                </p>
+
+            </div>
+
+        
+        </div>
+    </main>
+   
+    <br><br>
+    <footer>
+
+        <div class="lista_footer">
+            <ul>
+                <li><a href="promocao.html">PROMOÇÃO</a></li>
+                <li><a href="hoteis.html">HOTEIS</a></li>
+                <li><a href="pacotes.html">PACOTES</a></li>
+                <li><a href="../index.html">VOOS</a></li>
+                <li><a href="Locacao_Carros.html">ALUGUEL DE CARROS</a></li>
+                <li><a href="quem_somos.html">QUEM SOMOS</a></li>
+            </ul>
+
+            <img src="../Imagens/IMG_Fixos/mapa.png" class="imagen_footer"/>
+        </div>
+
+        <div class="company_info">
+            <img src="../Imagens/IMG_Fixos/logo.png" class="imagen_footer" />
+            <div>
+                <h4>AGENCIA DE VIAGENS</h4>
+                <p>O Mundo é Nosso!<br>CNPJ 12.123.123/0001-10<br>Av. Brigadeiro Faria Lima, Nº 4000, São Paulo - SP</p>
+            </div>
+
+            <div class="redes">
+                <img src="../Imagens/IMG_Fixos/facebook_icon.png" />
+                <img src="../Imagens/IMG_Fixos/instagram_icon.png" />
+                <img src="../Imagens/IMG_Fixos/youtube_icon.png" />
+                <img src="../Imagens/IMG_Fixos/whatsapp_icon.png" />
+                <img src="../Imagens/IMG_Fixos/twitter_icon.png" />
+                <img src="../Imagens/IMG_Fixos/telefone_icon.png" />
+                <img src="../Imagens/IMG_Fixos/telegram_icon.png" />
+            </div>
+            <p>TODOS OS DIREITOS RESERVADOS © BORA DECOLAR AGÊNCIA DE VIAGENS</p>
+        </div>
+
+        <div class="branco"></div>
+
+    </footer>
+
+
+
+</body>
+</html>
